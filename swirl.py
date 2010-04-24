@@ -10,8 +10,6 @@ import functools
 from tornado.ioloop import IOLoop
 from tornado.web import RequestHandler, asynchronous as web_async
 
-logging.getLogger("tornado.web").addHandler(logging.StreamHandler())
-
 try:
     from inspect import isgeneratorfunction
 except ImportError:
